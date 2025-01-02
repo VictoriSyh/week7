@@ -1,0 +1,292 @@
+/*header*/
+.header_logo{
+    display: grid;
+    grid-template-columns: 40% 30% 10% 10%;
+    grid-template-rows: 40px 20px;
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+    margin: 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.logo{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.text1{
+    display: grid;
+    grid-row: 1/2;
+    grid-column:3/4;
+}
+
+.e-mail{
+    display: grid;
+    grid-row: 2/3;
+    grid-column:3/4;
+}
+
+.text2{
+    display: grid;
+    grid-row: 1/2;
+    grid-column:4/5;
+}
+
+.phone{
+    display: grid;
+    grid-row: 2/3;
+    grid-column:4/5; 
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+    margin: 50px;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: 30% 5% 40% 30%;
+    margin: 80px;
+}
+
+/*main*/
+
+img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 50px;
+    position: center;
+}
+
+.photo1{
+    display: grid;
+    justify-content: center;
+    margin: 5%;
+}
+
+.o_firme{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 20% 20% 1fr;
+    margin: 5%;
+}
+
+.o_firme1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.o_firme2{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.o_firme3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.o_firme4{
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.o_firme5{
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-content: center;
+}
+
+.o_firme6{
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    justify-content: center;
+}
+
+
+.img1{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    margin: 50px;
+    text-align: center;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*footer*/
+
+
+footer{
+    display: grid;
+    grid-template-columns: 20% 20% 10% 20% 10%;
+    grid-template-rows: 30% 30% 30% 30% 30%;
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.one{
+    grid-row: 1/2;
+    grid-column:1/2;
+}
+
+.two{
+    grid-row: 1/2;
+    grid-column:4/5;
+}
+
+.three{
+    grid-row: 1/2;
+    grid-column:5/6;
+}
+
+.four{
+    grid-row: 1/2;
+    grid-column:6/7;
+}
+
+.five{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.six{
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.seven{
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.eight{
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+.nine{
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+
+.ten{
+    grid-row: 3/4;
+    grid-column: 6/7;
+    text-align: center;
+}
+
+.eleven{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.twelve{
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+/*Адаптация*/
+
+/*laptop*/
+@media screen and (max-width: 1370px) {
+    .header_logo{
+        grid-template-columns: 10% 60% 20% 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+   
+
+    .header_logo{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    
+    .header__nav{
+        display: grid;
+        grid-template-columns: 8% 15% 8% 10% 10% 10% 15% 10% 5% 20%;
+        grid-template-rows: 1fr;
+    }
+
+    .text{
+        grid-template-columns: 30% 5% 50% 20%;
+    }
+
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        height: 50px;
+        align-items: center;
+        justify-items: center;
+        margin: 50px;
+    }
+
+
+    .header_logo{
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    }
+   
+    .text{
+        display: flex;
+    }
+    
+    .o_firme{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

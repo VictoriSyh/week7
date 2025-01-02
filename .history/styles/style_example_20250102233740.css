@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(auto-fit, 200px);
+}
+
+img{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.one{
+    background-color: blue;
+}

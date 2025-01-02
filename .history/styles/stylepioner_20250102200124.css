@@ -1,0 +1,176 @@
+/*header*/
+.header_logo{
+    display: grid;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: 40px 20px;
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+    margin: 50px;
+
+}
+.text1{
+    display: grid;
+    grid-row: 1/2;
+    grid-column:3/4;
+}
+
+.e-mail{
+    display: grid;
+    grid-row: 2/3;
+    grid-column:3/4;
+}
+
+.text2{
+    display: grid;
+    grid-row: 1/2;
+    grid-column:4/5; 
+}
+
+.phone{
+    isplay: grid;
+    grid-row: 2/3;
+    grid-column:4/5; 
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+    justify-items: center;
+    margin: 50px;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: 30% 5% 40% 30%;
+    margin: 80px;
+}
+
+/*main*/
+img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 50px;
+    position: center;
+}
+
+.photo1{
+    display: flex;
+    justify-content: center;
+}
+
+.o_firme{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+}
+
+.img1{
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+
+h2{
+    margin: 50px;
+    text-align: center;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*footer*/
+
+
+footer{
+    display: grid;
+    grid-template-columns: 20% 35% 10% 10% 20%;
+    grid-template-rows: 30% 30% 30% 30% 30%;
+    gap: 1px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.one{
+    grid-row: 1/2;
+    grid-column:1/2;
+}
+
+.two{
+    grid-row: 1/2;
+    grid-column:4/5;
+}
+
+.three{
+    grid-row: 1/2;
+    grid-column:5/6;
+}
+
+.four{
+    grid-row: 1/2;
+    grid-column:6/7;
+}
+
+.five{
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+.six{
+    grid-row: 2/3;
+    grid-column: 5/6;
+}
+
+.seven{
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+
+.eight{
+    grid-row: 3/4;
+    grid-column: 4/5;
+}
+
+.nine{
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+
+.ten{
+    grid-row: 3/4;
+    grid-column: 6/7;
+    text-align: center;
+}
+
+.eleven{
+    grid-row: 4/5;
+    grid-column: 4/5;
+}
+
+.twelve{
+    grid-row: 5/6;
+    grid-column: 4/5;
+}
+
+/*Адаптация*/
+
+/*laptop*/
+@media screen and (max-width: 1370px) {
+    .header_logo{
+        grid-template-columns: 10% 60% 30% 20%;
+        
+    }
+}
